@@ -1,0 +1,259 @@
+/* The standard CSS for doxygen 1.8.3.1 */
+
+body
+{
+	background-color: grey;
+}
+
+
+
+
+/* @group Heading Levels */
+
+h1, h2, h3, h4, h5, h6 {
+	-webkit-transition: text-shadow 0.5s linear;
+	-moz-transition: text-shadow 0.5s linear;
+	-ms-transition: text-shadow 0.5s linear;
+	-o-transition: text-shadow 0.5s linear;
+	transition: text-shadow 0.5s linear;
+	margin-right: 15px;
+	color: grey;
+}
+
+h1.glow, h2.glow, h3.glow, h4.glow, h5.glow, h6.glow {
+	text-shadow: 0 0 15px red;
+}
+
+
+div.line.glow {
+	background-color: red;
+	box-shadow: 0 0 10px red;
+}
+
+.tabs, .tabs2, .tabs3 {
+    background-image: none;
+    background-color: white;
+    width: 100%;
+    z-index: 101;
+    font-size: 13px;
+    font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
+
+}
+
+.textblock, ul, ol, div.directory, #doc-content h3, div.qindex, div.center, div.dynheader, code
+{
+    background: white;
+    padding: 1em;
+    border-radius: 0.5em;
+    width: auto;
+    margin-bottom: 0.5em;
+    padding-left: 2em;
+}
+
+h2.groupheader {
+    background: white;
+    width: auto;
+}
+
+#doc-content table{
+	display: box;
+    background: white;
+    border-radius: 0.5em;
+}
+
+.tablist a {
+	background-image:none;
+	background-color:transparent;
+	color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+}
+
+.tablist a:hover {
+	background-image:none;
+	background-color: #AAAA00;
+	
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff0000), to(#333333)); 
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #333333, #e6e6e6); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #333333, #e6e6e6); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #333333, #e6e6e6); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #333333, #e6e6e6);
+
+	color: #000000;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+    
+    border-bottom-right-radius:10px;
+}
+
+.tablist li.current a 
+{
+	background-image:none;
+	background-color: #AAAA00;
+	
+	/* Safari 4-5, Chrome 1-9 */ 
+	background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ff0000), to(#333333)); 
+	/* Safari 5.1, Chrome 10+ */ 
+	background: -webkit-linear-gradient(top, #333333, #e6e6e6); 
+	/* Firefox 3.6+ */ 
+	background: -moz-linear-gradient(top, #333333, #e6e6e6); 
+	/* IE 10 */ 
+	background: -ms-linear-gradient(top, #333333, #e6e6e6); 
+	/* Opera 11.10+ */ 
+	background: -o-linear-gradient(top, #333333, #e6e6e6);
+
+	color: #000000;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 1.0);
+    text-decoration: none;
+
+    border-bottom-right-radius:10px;
+
+}
+
+#titlearea
+{
+	color: e6e6e6;
+	background-color: white;
+	padding: 0px;
+	width: 100%;
+	border-bottom: 1px solid #ff0000;
+}
+#projectname {
+  font: 400% Helvetica,Tahoma,Arial,sans-serif;
+  font-weight: bold;
+  padding: 0px 0px;
+  color: rgba(128, 128, 128, 0.8);
+  text-shadow:  0 0.2em 0.2em #e6e6e6, 0 0 0 #ff0000;
+}
+
+#projectbrief {
+    font: 120% Tahoma,Arial,sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ui-resizable-e {
+  background: repeat scroll right center transparent;
+  cursor:e-resize;
+  background-color: #333333;
+  height:100%;
+  right:0;
+  top:0;
+  width:6px;
+}
+
+#projectlogo img
+{
+	height: 128px;
+	width: 128px;
+}
+
+div.header
+{
+	/*position: fixed;*/
+	display: box;
+	background: white;
+	border-bottom: none;
+	border-radius: 10px;
+	margin: 0.5em;
+}
+
+#nav-sync
+{
+	display: none;
+}
+
+#nav-tree
+{
+	background-image: none;
+	background-repeat: none;
+	background-color: white;
+}
+
+
+
+#nav-tree .selected {
+  background-image: none;
+  background-color: #333333;
+  background-repeat:repeat-x;
+  color: #FFFFFF;
+  text-shadow: 0px 1px 1px rgba(0, 0, 0, 1.0);
+}
+
+.navpath ul {
+
+    font-size: 11px;
+    background-image: none;
+    background-color: #333333;
+    background-repeat: repeat-x;
+    background-position: 0px -5px;
+    height: 30px;
+    line-height: 30px;
+    color: rgb(138, 160, 204);
+    border: 1px solid rgb(194, 205, 228);
+    overflow: hidden;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.navpath li.footer {
+
+    list-style-type: none;
+    float: right;
+    padding-left: 10px;
+    padding-right: 15px;
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+    color: #FFFFFF;
+    font-size: 8pt;
+
+} 
+
+.navpath li.navelem a {
+    height: 32px;
+    display: block;
+    outline: medium none;
+    color: rgb(255, 255, 255);
+    font-family: 'Lucida Grande',Geneva,Helvetica,Arial,sans-serif;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    font-weight: normal;
+    text-decoration: none;
+}
+
+#nav-tree .selected a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+
+div.header {
+    background-image: none;
+
+}
+
+
+.memproto, dl.reflist dt {
+    background-image: none;
+}
+
+
+
+.tablist li {
+    float: left;
+    display: table-cell;
+    background-image: none;
+    line-height: 36px;
+    list-style: none outside none;
+}
