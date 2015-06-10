@@ -1,0 +1,12 @@
+Source: ros-indigo-h4r-x52-joyext
+Section: misc
+Priority: extra
+Maintainer: Christian Holl <cyborg-x1@gmail.com>
+Build-Depends: debhelper (>= 9.0.0), libx52pro-dev, ros-indigo-catkin, ros-indigo-message-generation, ros-indigo-roscpp, ros-indigo-std-msgs
+Homepage: http://wiki.ros.org/h4r_x52_joyext
+Standards-Version: 3.9.2
+
+Package: ros-indigo-h4r-x52-joyext
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, libx52pro0, ros-indigo-message-runtime, ros-indigo-roscpp, ros-indigo-std-msgs
+Description: The h4r_x52_joyext is used for controlling the MFD and the LEDs on the Saitek X52 Pro Joystick.
